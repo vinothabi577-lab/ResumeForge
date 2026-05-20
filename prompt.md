@@ -8,7 +8,7 @@ The application must feel like a premium startup product funded by YC or backed 
 
 The product should NOT look like a generic AI-generated CRUD dashboard.
 
-It should feel:
+It should feel;
 
 Elegant
 Fast
