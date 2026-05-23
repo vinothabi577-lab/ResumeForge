@@ -16,7 +16,8 @@ const PublicResume = () => {
   // Load public copy data
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/api/resumes/public/${id}`)
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      axios.get(`${apiUrl}/resumes/public/${id}`)
         .then((res) => {
           setResumeData(res.data);
           setLoading(false);
