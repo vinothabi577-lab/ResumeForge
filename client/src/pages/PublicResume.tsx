@@ -16,7 +16,7 @@ const PublicResume = () => {
   // Load public copy data
   useEffect(() => {
     if (id) {
-      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      const apiUrl = import.meta.env.VITE_API_URL || "https://resumeforge-vq02.onrender.com/api";
       axios.get(`${apiUrl}/resumes/public/${id}`)
         .then((res) => {
           setResumeData(res.data);
